@@ -8,7 +8,7 @@
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
     <SortOrder>1000</SortOrder>
     <TemplateID>4493b3c1-a540-4821-916b-6c9baa1c873b</TemplateID>
-    <CreateNewFolder>true</CreateNewFolder>
+    <CreateNewFolder>false</CreateNewFolder>
     <DefaultName>Habitat.Feature.NewFeature</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
     <CreateInPlace>true</CreateInPlace>
@@ -23,7 +23,7 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="$featureName$Item.cs">Models\NewFeatureItem.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="I$featureName$Repository.cs">Repositories\INewFeatureRepository.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="$featureName$Repository.cs">Repositories\NewFeatureRepository.cs</ProjectItem>
-      <ProjectItem>Templates.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Templates.cs">Templates.cs</ProjectItem>
       <ProjectItem>Web.config</ProjectItem>
       <ProjectItem>Web.Debug.config</ProjectItem>
       <ProjectItem>Web.Release.config</ProjectItem>
