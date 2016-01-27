@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="Habitat.Feature.Project.Wizard.c0eca524-df83-44b6-b981-9eb97b474818" Version="1.0" Language="en-US" Publisher="James Coleman" />
+    <DisplayName>Habitat.Feature.Project.Wizard</DisplayName>
+    <Description xml:space="preserve">A wizard to assist in the creation of a new habitat feature project</Description>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset d:Source="Project" Type="Microsoft.VisualStudio.ProjectTemplate" d:ProjectName="Habitat.Feature.Project.Template" d:TargetPath="|Habitat.Feature.Project.Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+    <Asset d:Source="Project" Type="Microsoft.VisualStudio.Assembly" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" AssemblyName="|%CurrentProject%;AssemblyName|" />
+  </Assets>
+</PackageManifest>

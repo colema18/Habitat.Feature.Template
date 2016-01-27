@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Habitat.Feature.Project.Template</Name>
+    <Description>Habitat.Feature.Project.Template</Description>
+    <Icon>Habitat.Feature.Project.Template.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>4493b3c1-a540-4821-916b-6c9baa1c873b</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Habitat.Feature.NewFeature</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <CreateInPlace>true</CreateInPlace>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="Habitat.Feature.NewFeature.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Feature.$featureName$.Serialization.config">App_Config\Include\Feature\Feature.NewFeature.Serialization.config</ProjectItem>
+      <ProjectItem>packages.config</ProjectItem>
+      <ProjectItem>Properties\PublishProfiles\Local.pubxml</ProjectItem>
+      <ProjectItem>Views\Web.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$featureName$Controller.cs">Controllers\NewFeatureController.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$featureName$Item.cs">Models\NewFeatureItem.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="I$featureName$Repository.cs">Repositories\INewFeatureRepository.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$featureName$Repository.cs">Repositories\NewFeatureRepository.cs</ProjectItem>
+      <ProjectItem>Templates.cs</ProjectItem>
+      <ProjectItem>Web.config</ProjectItem>
+      <ProjectItem>Web.Debug.config</ProjectItem>
+      <ProjectItem>Web.Release.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">Properties\AssemblyInfo.cs</ProjectItem>
+
+      <!--Location of the files below within the template is flatter than the output to allow for parent folder renaming by parameter-->
+      <ProjectItem ReplaceParameters="true" TargetFileName="$featureName$\$featureName$.cshtml">Views\NewFeature.cshtml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Feature.$featureName$.Renderings\$featureName$.yml">serialization\NewFeatureRendering.yml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Feature.$featureName$.Renderings\$featureName$\$featureName$.yml">serialization\NewFeatureRenderingDetail.yml</ProjectItem>
+
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>Habitat.Feature.Project.Wizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=614cfa15b9c0bafa</Assembly>
+    <FullClassName>Habitat.Feature.Project.Wizard.HabitatFeatureWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

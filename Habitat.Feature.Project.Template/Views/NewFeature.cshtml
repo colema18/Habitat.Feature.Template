@@ -1,0 +1,12 @@
+﻿@model $safeprojectname$.Models.$featureName$Item
+
+@{
+    if (Model?.Item == null)
+    {
+        return;
+    }
+}
+
+<div>
+    Hello @Model.Item.DisplayName
+</div>

@@ -1,0 +1,38 @@
+{
+  "name": "habitat.feature.template",
+  "version": "1.0.0",
+  "description": "Sitecore Habitat New Feature Template",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-zip": "^3.1.0",
+    "gulp-unzip": "^0.1.3",
+    "gulp-load-plugins": "^1.0.0",
+    "gulp-foreach": "^0.1.0",
+    "gulp-msbuild": "0.2.13",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-newer": "^1.0.0",
+    "run-sequence": "^1.1.4",
+    "vinyl": "^1.1.0",
+    "gulp-rimraf": "^0.2.0",
+    "rimraf": "^2.4.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colema18/Habitat.Feature.Template.git"
+  },
+  "author": "James Coleman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colema18/Habitat.Feature.Template/issues"
+  },
+  "homepage": "https://github.com/colema18/Habitat.Feature.Template#readme"
+}
